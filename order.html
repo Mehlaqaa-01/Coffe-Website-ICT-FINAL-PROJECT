@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order | Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                <h2 class="logo-text">&#9749 coffee</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="index.html#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="order-section">
+            <div class="section-content">
+                <h2 class="section-title">Place Your Order</h2>
+                <form id="order-form" class="order-form">
+                    <!-- Name and Email -->
+                    <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+                    <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+
+                    <!-- Menu Selection -->
+                    <h3>Select Menu Items:</h3>
+                    <div class="order-items">
+                        <label><input type="checkbox" name="items" value="Hot Beverages"> Hot Beverages</label>
+                        <label><input type="checkbox" name="items" value="Cold Beverages"> Cold Beverages</label>
+                        <label><input type="checkbox" name="items" value="Special Combos"> Special Combos</label>
+                        <label><input type="checkbox" name="items" value="Refreshment"> Refreshment</label>
+                        <label><input type="checkbox" name="items" value="Desserts"> Desserts</label>
+                        <label><input type="checkbox" name="items" value="Burger & French Fries"> Burger & French Fries</label>
+                    </div>
+
+                    <!-- Gallery Selection -->
+                    <h3>Select Gallery Items (Optional):</h3>
+                    <div class="order-items">
+                        <label><input type="checkbox" name="gallery" value="Gallery 1"> Gallery 1</label>
+                        <label><input type="checkbox" name="gallery" value="Gallery 2"> Gallery 2</label>
+                        <label><input type="checkbox" name="gallery" value="Gallery 3"> Gallery 3</label>
+                        <label><input type="checkbox" name="gallery" value="Gallery 4"> Gallery 4</label>
+                        <label><input type="checkbox" name="gallery" value="Gallery 5"> Gallery 5</label>
+                        <label><input type="checkbox" name="gallery" value="Gallery 6"> Gallery 6</label>
+                    </div>
+
+                    <!-- Message -->
+                    <textarea name="message" placeholder="Additional Notes" class="form-input"></textarea>
+
+                    <button type="submit" class="submit-button">Place Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
